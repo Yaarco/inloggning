@@ -4,9 +4,15 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
+main {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
 
 header {
     box-sizing: border-box;
@@ -14,7 +20,7 @@ header {
     width: 100%;
     max-width: 800px;
     display: flex;
-    height: 10vh;
+    height: 15vh;
     align-items: center;
     justify-content: space-between;
     color: #fff;
@@ -28,6 +34,28 @@ img {
     -webkit-mask-image: linear-gradient(to left, black 60%, transparent);
     mask-image: linear-gradient(to left, black 60%, transparent);
     height: 100%;
+}
+
+#alert {
+    height: 1em;
+}
+
+input, button {
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+}
+
+button {
+    background-color: rgb(114, 23, 23);
+    color: #fff;
+    font-weight: bold;
+}
+
+#dashboard {
+    display: none;
 }
 
 form {
