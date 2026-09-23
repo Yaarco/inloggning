@@ -10,21 +10,21 @@
 <body>
     <header>
         <h1>Svampletarna</h1>
-        <img src="svamp.jpg" alt="Bild på svamp" srcset="">
     </header>
     <main>
         <section id="login">
             <h2>Logga in</h2>
             <!--För att ge meddelanden som ex "Felaktigt lösenord"-->
             <p id="alert"></p>
-            <form method="post" id="login-form">
+
+            <form id="login-form">
                 <label for="username">Namn</label>
                 <input type="text" name="Namn" id="username" required>
 
                 <label for="password">Lösenord</label>
                 <input type="password" name="Lösenord" id="password" required>
 
-                <button type="submit" id="login-btn">Logga in</button>
+                <button type="submit">Logga in</button>
             </form>
         </section>
         <section id="dashboard">
