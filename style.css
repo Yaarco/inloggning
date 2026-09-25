@@ -33,17 +33,16 @@ h2 {
 }
 
 input, button {
-    width: fit-content;
     border-radius: 10px;
     border: 1px solid #000;
     padding: 0.2em 0.5em;
     font-size: 1em;
+    margin-bottom: 1em;
 }
 
 button {
-    background-color: rgb(109, 100, 88);
+    background-color: rgb(30, 74, 156);
     color: #fff;
-    font-weight: bold;
 }
 
 #dashboard {
@@ -55,6 +54,3 @@ form {
     flex-direction: column;
 }
 
-input {
-    margin-bottom: 1em;
-}

@@ -1,5 +1,5 @@
 const logoutBtn = document.getElementById("logout-btn"),
-loginForm = document.getElementById("login-form"),
+loginForm = document.getElementById("login-form"), 
 usernameInput = document.getElementById('username'),
 passwordInput = document.getElementById('password'),
 alertBox = document.getElementById("alert"),
@@ -23,7 +23,7 @@ function login(){
     document.querySelector("span").innerText=username //sätter in namnet i Välkommen texten
     localStorage.setItem("loggedin", true) // sparar en bool istället för att lägga både lösenord och användarnamn i localstorage eftersom det bara finns ett giltigt ändå
 }
-if(Boolean(localStorage.getItem("loggedin"))){ // localstorage sparar bara strings, så vi får omvandla "true" till boolean
+if(JSON.parse(localStorage.getItem("loggedin"))){ // localstorage sparar bara strings, så vi får omvandla "true" till boolean
     login()
 }
 
